@@ -1,0 +1,812 @@
+/* BODY  */
+
+html {
+    scroll-behavior: auto;
+}
+body {
+    font-family: 'Jaldi', sans-serif;
+    padding: 0;
+    overflow-x: hidden;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+    font-size: 15px;
+}
+
+a {
+    color: white;
+    /* color: #2C2C2A; */
+    text-decoration: none;
+}
+
+.button-container {
+    display: flex;
+    margin: 60px auto;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    margin-left: 0;
+    justify-content: left;
+}
+
+
+
+.button {
+  display: flex;
+  overflow: hidden;
+
+  margin: 10px;
+  padding: 12px 12px;
+  margin-left: 0;
+
+  cursor: pointer;
+  user-select: none;
+  transition: all 150ms linear;
+  text-align: left;
+  white-space: nowrap;
+  text-decoration: none !important;
+  text-transform: none;
+  text-transform: capitalize;
+
+  color: #fff;
+  border: 0 none;
+  border-radius: 36px;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.3;
+
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+ 
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 160px;
+  
+  box-shadow: 2px 5px 10px #121312;
+}
+
+.button:hover {
+    transition: all 150ms linear;
+
+    opacity: .85;
+  }
+  
+  .button:active {
+    transition: all 150ms linear;
+    opacity: .75;
+  }
+  
+  .button:focus {
+    outline: 1px dotted #959595;
+    outline-offset: -4px;
+  }
+
+.regular {
+  color: white;
+  background-color: transparent;
+  border: 1px solid #00d4ff;
+  
+}
+
+.regular:hover {
+    color: #202129;
+    background-color: #00d4ff;
+    opacity: 1;
+  }
+  
+.regular:active {
+    background-color: #d5d6d6;
+    opacity: 1;
+  }
+
+.dark {
+  color: white;
+  background: #161616;
+}
+
+.dark:focus {
+    outline: 1px dotted white;
+    outline-offset: -4px;
+  }
+  
+
+
+
+
+
+/* STYLING FOR ALL THE SECTIONS HEADING  */
+
+.main-heading {
+    margin: 0 0 30px 0;
+    font-size: 70px;
+    text-align: left;
+}
+
+
+/* STYLING FOR ALL THE SECTIONS PARA   */
+
+.main-content {
+    color: #78828d;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+/* NAVBAR STYLING  */
+
+nav {
+    color: black;
+    position: fixed;
+    z-index: 200;
+    width: 100%;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-icon {
+    display: none;
+}
+
+
+/* NAVBAR MOBLILE VIEW STYLING   */
+
+@media all and (max-width: 800px) {
+    .navbar-icon {
+        display: block;
+        color: white;
+    }
+    ul {
+        padding: 0;
+    }
+    li {
+        display: block;
+        padding: 20px 0;
+    }
+    h2>a {
+        color: white;
+    }
+    a {
+        color: black;
+    }
+    .nav-items {
+        color: black;
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+        z-index: 2000;
+        position: absolute;
+        top: 5rem;
+        border-radius: 20px;
+        left: -170%;
+        transition: 1s all;
+        text-align: center;
+    }
+    .active-nav {
+        color: black;
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 5rem;
+        border-radius: 20px;
+        left: 0%;
+        transition: 1s all;
+    }
+}
+
+
+/* SECTION 1 STYLING */
+
+
+/* WHY AI SECTION  */
+
+.s1 {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    height: 700px;
+}
+
+.header-vdo {
+    overflow-x: hidden;
+}
+
+#myVideo {
+    position: absolute;
+    top: 0%;
+    object-fit: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    will-change: opacity;
+    /* max-height: 100%; */
+    height: 100%;
+    width: 100%;
+    height: 900px
+    /* width: 100%; */
+}
+
+
+
+.blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #121212;
+  width: 30vmax;
+  z-index: 100;
+  animation: move 10s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
+
+
+.square {
+    padding: 100px;
+    background-color: #121212;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+
+
+
+@keyframes move {
+  0%   { transform: scale(1)   translate(10px, -30px); }
+  38%  { transform: scale(0.8, 1) translate(50vw, 30vh) rotate(160deg); }
+  40%  { transform: scale(0.8, 1) translate(50vw, 30vh) rotate(160deg); }
+  78%  { transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg); }
+  80%  { transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg); }
+  100% { transform: scale(1)   translate(10px, -30px); }
+}
+
+
+
+
+
+#why-ai {
+    color: white;
+}
+
+.why-ai-text {
+    text-align: left;
+    position: absolute;
+    width: 60%;
+    margin: 0 auto;
+    color: white;
+    z-index: 100;
+    top: 30%;
+    left: 15%;
+    /* transform: translate(-40%, -45%); */
+    color: black;
+}
+
+.why-ai-text h1 {
+    margin: 0 auto;
+    font-size: 60px;
+    line-height: 85px;
+    text-transform: uppercase;
+}
+
+.why-ai-text h2 {
+    margin: 0 auto;
+}
+
+
+/* SECTION 2 - WHAT YOU GET  */
+
+#what-you-get {
+    background-color: black;
+    color: white;
+    padding-top: 170px;
+    padding-bottom: 180px;
+}
+
+.what-you-get {
+    display: flex;
+    justify-content: space-around;
+}
+
+.what-you-get-left {
+    width: 40%;
+    padding: 50px;
+    z-index: 1;
+    margin: 0 auto;
+    margin-bottom: 0;
+}
+
+.what-you-get-left p {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+/* SECTION 3 - WHO ARE WE  */
+
+.who-are-we {
+    padding-top: 100px;
+    display: flex;
+    background-color: black;
+    color: #fff;
+    padding: 150px;
+    z-index: 100;
+    justify-content: space-around;
+}
+
+.who-are-we-left {
+    padding: 30px;
+}
+
+.who-are-we-left img {
+    height: 700px;
+    /* opacity: 0.6; */
+    border-radius: 3%;
+}
+
+.who-are-we-right {
+    padding-top: 100px;
+    width: 40%;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+
+/* SECTION 4 - THE PROCESS  */
+
+#the-process {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    padding-top: 150px;
+    padding-bottom: 250px;
+    z-index: -1;
+}
+
+.the-process-inner {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/* SECTION 5 - OUR TEAM  */
+
+.about-our-team {
+    display: flex;
+    z-index: 100;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    padding-bottom: 150px;
+}
+
+.about-our-team h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.about-our-team i {
+    margin: 0;
+    padding: 0 3px;
+}
+
+.about-our-team img {
+    height: 320px;
+    border-radius: 5px;
+}
+
+.about-our-team-data {
+    width: 30%;
+    text-align: left;
+}
+
+#our-team {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+#about-our-team p {
+    font-size: 15px;
+}
+
+.mobile-view-our-team {
+    display: none;
+}
+
+
+/* CONTACT SECTION STYLING  */
+
+#contact-us {
+    background: black;
+    color: white;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+
+.contact-us {
+    padding: 10px;
+}
+
+.contact-us h1 {
+    text-align: center;
+}
+
+.contact-us p {
+    text-align: center;
+    width: 50%;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.social-links a {
+    padding: 10px;
+    color: #78828d;
+}
+
+
+/* SECTION 6 - CONTACT US  */
+
+
+/* UNIVERSAL FLEXBOX STYLES */
+
+.flex {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.flex-child {
+    width: 100%;
+}
+
+.footer {
+    background-color: black;
+    color: #959595;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.footer a {
+    padding: 10px;
+    padding-bottom: 0;
+    color: #959595;
+}
+
+/* MEDIA QUIERY FOR MAX-WIDTH 800PX */
+
+@media all and (max-width: 800px) {
+    .our-team {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .why-ai-text h1 {
+        font-size: 30px;
+        margin: 0 auto;
+    }
+    .why-ai-text h2 {
+        font-weight: lighter;
+    }
+    .blob {
+        width: 20vmax;
+      }
+      .square {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+
+/* MEDIA QUIERY FOR MAX-WIDTH 500PX */
+
+@media all and (max-width: 500px) {
+    body {
+        overflow-x: hidden;
+    }
+    .why-ai-text h1 {
+        padding-top: 100px;
+        font-size: 30px;
+        text-align: left;
+        line-height: 1.5;
+        text-transform: uppercase;
+    }
+    .why-ai-text h2 {
+        padding-top: 10px;
+        text-align: left;
+        line-height: 1;
+    }
+    .about-our-team img {
+        background-color: black;
+        border-radius: 5px;
+    }
+    .about-our-team {
+        display: none;
+    }
+    .mobile-view-our-team {
+        display: block;
+        background-color: black;
+        color: white;
+        height: 100vh;
+        padding-bottom: 100px;
+    }
+    .mobile-team {
+        display: block;
+    }
+    .mobile-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .mobile-flex>div>p {
+        font-size: 10px;
+    }
+    .mobile-view-our-team img {
+        height: 150px;
+    }
+    .mobile-view-our-team h1 {
+        font-size: 40px;
+    }
+    .mobile-our-team {
+        padding: 15px;
+    }
+    .mobile-view-our-team p {
+        font-size: 16px;
+    }
+    .who-are-we-right>.main-heading {
+        font-size: 30px;
+    }
+    .who-are-we p {
+        font-size: 18px;
+    }
+    .who-are-we-left {
+        padding: 0;
+    }
+}
+
+
+/* MEDIA QUIERY FOR MAX-WIDTH 1000PX */
+
+@media all and (max-width: 1000px) {
+    .s1 {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    .why-ai-text {
+        width: 75%;
+        top: 10%;
+    }
+    #myVideo {
+        height: 900px;
+    }
+    #about-our-team {
+        display: flex;
+        flex-wrap: wrap;
+        height: 1000px;
+    }
+    .about-our-team-data {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .what-you-get {
+        flex-wrap: wrap;
+    }
+    .main-heading {
+        margin-top: 10px;
+        font-size: 50px;
+    }
+    .main-content {
+        font-size: 18px;
+    }
+    .what-you-get-left {
+        width: 90%;
+    }
+    .what-you-get-right {
+        width: 90%;
+    }
+    .what-you-get-left p {
+        width: auto;
+    }
+    .who-are-we {
+        padding: 10px;
+        padding-top: 150px;
+        flex-wrap: wrap;
+    }
+    .who-are-we-right {
+        width: 90%;
+        padding-top: 50px;
+        padding-bottom: 150px;
+    }
+    .who-are-we-left img {
+        height: 250px;
+        width: auto;
+    }
+    .the-process-inner {
+        width: 90%;
+    }
+    #about-our-team img {
+        height: 200px;
+    }
+    .about-our-team-3 {
+        display: flex;
+    }
+    .contact-us p {
+        width: 90%;
+    }
+    .footer p {
+    }
+    
+}
+
+
+/* STAR DOTS STYLING STARTS FROM HERE */
+
+.seeing-the-unseen-dots3 {
+    position: absolute;
+    left: 0%;
+    top: auto;
+    right: auto;
+    bottom: -92%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.stars {
+    z-index: -1;
+}
+
+.svgdots-1 {
+    animation: twinkle 1s infinite linear;
+}
+
+.svgdots-2 {
+    animation: twinkle 2s infinite linear;
+}
+
+.svgdots-3 {
+    animation: twinkle 3s infinite linear;
+}
+
+.svgdots-4 {
+    animation: twinkle 4s infinite linear;
+}
+
+.svgdots-5 {
+    animation: twinkle 5s infinite linear;
+}
+
+.svgdots-6 {
+    animation: twinkle 6s infinite linear;
+}
+
+.svgdots-7 {
+    animation: twinkle 7s infinite linear;
+}
+
+.svgdots-8 {
+    animation: twinkle 8s infinite linear;
+}
+
+.svgdots-9 {
+    animation: twinkle 9s infinite linear;
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 30%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 30%;
+    }
+}
+
+
+/* STAR DOTS STYLING ENDS HERE  */
+
+
+/* STYLING FOR THE GLOBE VDO   */
+
+.globe-container {
+    position: relative;
+    left: auto;
+    top: 0%;
+    right: 5%;
+    margin-bottom: 50px;
+    bottom: 10%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.s4,
+.s5 {
+    overflow-x: hidden;
+}
+
+.div-block-263 {
+    position: relative;
+}
+
+#rotate {
+    animation: rotation 30s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.image-268 {
+    width: 350px;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    border: 0;
+}
+
+.image-229 {
+    position: absolute;
+    left: 247px;
+    top: 456px;
+    bottom: 0px;
+    display: none;
+    width: 264px;
+    height: 171px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.image-268 img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+/* STYLING FOR THE GLOBE VDO ENDS HERE  */

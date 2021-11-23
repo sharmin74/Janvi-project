@@ -1,0 +1,144 @@
+/* BLUE DOTS STYLING  */
+
+.seeing-the-unseen-dots3 {
+    position: absolute;
+    left: 0%;
+    top: auto;
+    right: auto;
+    bottom: -92%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.stars {
+    z-index: -1;
+}
+
+.svgdots-1 {
+    animation: twinkle 1s infinite linear;
+}
+
+.svgdots-2 {
+    animation: twinkle 2s infinite linear;
+}
+
+.svgdots-3 {
+    animation: twinkle 3s infinite linear;
+}
+
+.svgdots-4 {
+    animation: twinkle 4s infinite linear;
+}
+
+.svgdots-5 {
+    animation: twinkle 5s infinite linear;
+}
+
+.svgdots-6 {
+    animation: twinkle 6s infinite linear;
+}
+
+.svgdots-7 {
+    animation: twinkle 7s infinite linear;
+}
+
+.svgdots-8 {
+    animation: twinkle 8s infinite linear;
+}
+
+.svgdots-9 {
+    animation: twinkle 9s infinite linear;
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 30%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 30%;
+    }
+}
+
+
+/* STYLING FOR THE WEB VIDEO - GLOBE ON PAGE (THE PROCESS)   */
+
+.globe-container {
+    position: absolute;
+    left: auto;
+    top: -80%;
+    z-index: 0;
+    right: -10%;
+    bottom: 0%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    opacity: 0.6;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.div-block-263 {
+    position: relative;
+}
+
+@media all and (max-width: 1000px) {
+    .globe-container {
+        top: -110%;
+    }
+}
+
+#rotate {
+    animation: rotation 30s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.image-268 {
+    width: 500px;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+img {
+    border: 0;
+}
+
+.image-229 {
+    position: absolute;
+    left: 247px;
+    top: 456px;
+    bottom: 0px;
+    display: none;
+    width: 264px;
+    height: 171px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
